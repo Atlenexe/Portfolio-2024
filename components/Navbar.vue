@@ -1,21 +1,22 @@
 <template>
     <nav :class="{ 'scrolled': scrolled }">
-        <nuxt-link to="#" class="logo">Hugo Mandou</nuxt-link>
+        <nuxt-link :to="{ path: '/', hash: '#top'}" class="logo">Hugo Mandou</nuxt-link>
         <ul>
             <li>
-                <nuxt-link to="#">Bio</nuxt-link>
+                <nuxt-link :to="{ path: '/', hash: '#bio'}">Bio</nuxt-link>
             </li>
             <li>
-                <nuxt-link to="#">Projets</nuxt-link>
+                <nuxt-link :to="{ path: '/', hash: '#projets'}">Projets</nuxt-link>
             </li>
             <li>
-                <nuxt-link to="#">Contact</nuxt-link>
+                <nuxt-link :to="{ path: '/', hash: '#contact'}">Contact</nuxt-link>
             </li>
         </ul>
     </nav>
 </template>
 
 <script>
+
 export default {
     data() {
         return {
@@ -48,7 +49,6 @@ nav {
     padding: 50px 70px;
 
     .logo {
-        font-family: BagdollDisplay, sans-serif;
         text-decoration: none;
         font-size: 28px;
         opacity: 0;

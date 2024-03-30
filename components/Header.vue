@@ -19,7 +19,6 @@ header {
     h1,
     h2 {
         display: inline-block;
-        line-height: 1.05;
         z-index: 0;
     }
 
