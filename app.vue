@@ -1,5 +1,5 @@
 <template>
-  <Header></Header>
+  <NuxtLayout />
 </template>
 
 <style lang="scss">
@@ -12,8 +12,10 @@
 
 :root {
   --white: #FFFBEC;
+  --transparent-white: #fffbec26;
   --black: #242121;
   --blue: #2F36DB;
+  --light-blue: #d6d7ff;
 }
 
 * {
