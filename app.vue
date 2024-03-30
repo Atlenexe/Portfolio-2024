@@ -1,6 +1,5 @@
 <template>
-  <div>
-  </div>
+  <Header></Header>
 </template>
 
 <style lang="scss">
@@ -11,25 +10,45 @@
   src: url('fonts/BagdollDisplay-Regular.woff') format('woff');
 }
 
+:root {
+  --white: #FFFBEC;
+  --black: #242121;
+  --blue: #2F36DB;
+}
+
 * {
   font-family: inter, sans-serif;
+  font-weight: 500;
   font-size: 20px;
   margin: 0;
   padding: 0;
+  color: var(--white);
+}
+
+body {
+  background-color: var(--black);
 }
 
 h1,
-h2 {
+h3 {
   font-family: BagdollDisplay, sans-serif;
 }
 
 h1 {
-  font-size: 115px;
-  letter-spacing: 25px;
+  font-size: 90px;
+  letter-spacing: 30px;
+  margin-right: -36px;
+  color: var(--blue);
+  text-transform: uppercase;
 }
 
 h2 {
+  font-size: 23px;
+  color: var(--blue);
+}
+
+h3 {
   font-size: 50px;
-  letter-spacing: 4px;
+  letter-spacing: 8px;
 }
 </style>
