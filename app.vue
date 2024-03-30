@@ -25,6 +25,9 @@ useHead({
   --black: #242121;
   --blue: #2F36DB;
   --light-blue: #d6d7ff;
+
+  --main-h-padding: 60px;
+  --project-v-padding: 30px;
 }
 
 * {
@@ -40,6 +43,16 @@ html,
 body {
   scroll-behavior: smooth;
   background-color: var(--black);
+  overflow-x: hidden;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 h1,
