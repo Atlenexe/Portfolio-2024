@@ -27,7 +27,6 @@ useHead({
   --light-blue: #d6d7ff;
 
   --main-h-padding: 60px;
-  --project-v-padding: 30px;
 }
 
 * {

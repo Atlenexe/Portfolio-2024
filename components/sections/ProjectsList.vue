@@ -1,22 +1,87 @@
+<script setup lang="ts">
+import type { Project } from '@/types/Project';
+
+const projects: Project[] = [
+    {
+        id: 'portfolio',
+        name: 'Portfolio',
+        stacks: 'Nuxt',
+        img: '/images/portfolio-test.png',
+        year: '2024'
+    },
+    {
+        id: 'supermaxiplanefight',
+        name: 'Super maxi plane fight',
+        stacks: 'HTML + Javascript',
+        img: '/images/neobloom-test.png',
+        year: '2024'
+    },
+    {
+        id: 'neobloom',
+        name: 'Neo bloom',
+        stacks: 'Next.js',
+        img: '/images/neobloom-test.png',
+        year: '2023'
+    },
+    {
+        id: 'acrousthetime',
+        name: 'Acrous the time',
+        stacks: 'Next.js',
+        img: '/images/portfolio-test.png',
+        year: '2023'
+    },
+    {
+        id: 'flaguesser',
+        name: 'Flaguesser',
+        stacks: 'Angular',
+        img: '/images/portfolio-test.png',
+        year: '2022'
+    },
+    {
+        id: 'fichepaie',
+        name: 'Refonte Fiche-paie.net',
+        stacks: 'Angular + Symfony',
+        img: '/images/portfolio-test.png',
+        year: '2022-2023'
+    },
+    {
+        id: 'proxinnov',
+        name: 'Proxinnov',
+        stacks: 'HTML + Javascript + NodeJs',
+        img: '/images/portfolio-test.png',
+        year: '2022'
+    },
+];
+
+const xPos = ref(0)
+const yPos = ref(0)
+const hoveredProject = ref<Project | null>(null);
+
+//Update the cursor position & get the hovered project
+const updatePosition = (event: MouseEvent) => {
+    [xPos.value, yPos.value] = [event.clientX, event.clientY];
+    const hoveredElement = event.target as HTMLElement;
+    hoveredProject.value = projects.find(project => project.id === (hoveredElement.closest('li')?.getAttribute('project-id') ?? null)) || null;
+};
+
+const resetHoveredProject = () => {
+    hoveredProject.value = null;
+}
+</script>
+
 <template>
-    <ul>
-        <li>
-            <nuxt-link to="/">
-                <span class="name">Portfolio</span>
-                <span class="stack">Nuxt</span>
-                <span class="year">2021</span>
-                <span class="icon">+</span>
-            </nuxt-link>
-        </li>
-        <li>
-            <nuxt-link to="/">
-                <span class="name">Portfolio</span>
-                <span class="stack">Nuxt</span>
-                <span class="year">2021</span>
+    <ul @mousemove="updatePosition" @mouseleave="resetHoveredProject">
+        <li v-for="project in projects" :key="project.id" :project-id="project.id">
+            <nuxt-link :to="'/' + project.id">
+                <span class="name">{{ project.name }}</span>
+                <span class="stack">{{ project.stacks }}</span>
+                <span class="year">{{ project.year }}</span>
                 <span class="icon">+</span>
             </nuxt-link>
         </li>
     </ul>
+
+    <ProjectPreview :xPos="xPos" :yPos="yPos" :project="hoveredProject" />
 </template>
 
 <style lang="scss" scoped>
@@ -33,7 +98,6 @@ li {
 
         span {
             padding: 30px 0;
-            z-index: 100;
             position: relative;
         }
 
