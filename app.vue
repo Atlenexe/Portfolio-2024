@@ -1,3 +1,17 @@
+<script setup lang="ts">
+useHead({
+  title: 'Hugo Mandou',
+  meta: [
+    { name: 'description', content: 'Développeur web fullstack à Nantes' },
+    { name: 'lang', content: 'fr' },
+
+    { property: 'og:title', content: 'Hugo Mandou' },
+    { property: 'og:description', content: 'Développeur web fullstack à Nantes' },
+    { property: 'og:type', content: 'website' },
+  ],
+})
+</script>
+
 <template>
   <NuxtLayout />
 </template>
