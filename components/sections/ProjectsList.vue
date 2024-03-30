@@ -6,49 +6,49 @@ const projects: Project[] = [
         id: 'portfolio',
         name: 'Portfolio',
         stacks: 'Nuxt',
-        img: '/images/portfolio-test.png',
+        img: '/images/previews/portfolio.png',
         year: '2024'
     },
     {
         id: 'supermaxiplanefight',
         name: 'Super maxi plane fight',
         stacks: 'HTML + Javascript',
-        img: '/images/neobloom-test.png',
+        img: '',
         year: '2024'
     },
     {
         id: 'neobloom',
         name: 'Neo bloom',
         stacks: 'Next.js',
-        img: '/images/neobloom-test.png',
+        img: '/images/previews/neobloom.png',
         year: '2023'
     },
     {
         id: 'acrousthetime',
         name: 'Acrous the time',
         stacks: 'Next.js',
-        img: '/images/portfolio-test.png',
+        img: '/images/previews/acrousthetime.png',
         year: '2023'
     },
     {
         id: 'flaguesser',
         name: 'Flaguesser',
         stacks: 'Angular',
-        img: '/images/portfolio-test.png',
+        img: '/images/previews/flaguesser.png',
         year: '2022'
     },
     {
         id: 'fichepaie',
         name: 'Refonte Fiche-paie.net',
         stacks: 'Angular + Symfony',
-        img: '/images/portfolio-test.png',
+        img: '/images/previews/fichepaie.png',
         year: '2022-2023'
     },
     {
         id: 'proxinnov',
         name: 'Proxinnov',
         stacks: 'HTML + Javascript + NodeJs',
-        img: '/images/portfolio-test.png',
+        img: '/images/previews/proxinnov.png',
         year: '2022'
     },
 ];
