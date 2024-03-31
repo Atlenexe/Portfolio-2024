@@ -1,6 +1,10 @@
+<script setup lang="ts">
+import { TitlePosition } from '@/enums/TitlePosition';
+</script>
+
 <template>
     <section>
-        <SectionTitle id="bio">
+        <SectionTitle :position="TitlePosition.LEFT" id="bio">
             Bio
         </SectionTitle>
 

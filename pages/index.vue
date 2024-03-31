@@ -3,6 +3,7 @@
     <main>
         <Bio />
         <Projects />
+        <Contact />
     </main>
 </template>
 
@@ -10,7 +11,7 @@
 main {
     display: flex;
     flex-direction: column;
-    gap: 300px;
+    gap: 280px;
     padding: var(--main-h-padding) 60px;
 }
 </style>
