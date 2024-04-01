@@ -1,5 +1,6 @@
 <template>
     <Header />
+    <Navbar />
     <main>
         <Bio />
         <Projects />
@@ -13,5 +14,11 @@ main {
     flex-direction: column;
     gap: 280px;
     padding: var(--main-h-padding) 60px;
+}
+</style>
+
+<style lang="scss">
+*{
+    color: var(--white);
 }
 </style>

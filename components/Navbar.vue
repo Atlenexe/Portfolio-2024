@@ -60,7 +60,7 @@ nav {
         justify-content: center;
         gap: 60px;
         list-style: none;
-        padding: 5px 15px;
+        padding: 5px 25px;
         border: 2px solid var(--white);
         border-radius: 50px;
         background-color: var(--transparent-white);

@@ -1,57 +1,6 @@
 <script setup lang="ts">
 import type { Project } from '@/types/Project';
-
-const projects: Project[] = [
-    {
-        id: 'portfolio',
-        name: 'Portfolio',
-        stacks: 'Nuxt',
-        img: '/images/previews/portfolio.png',
-        year: '2024'
-    },
-    {
-        id: 'supermaxiplanefight',
-        name: 'Super maxi plane fight',
-        stacks: 'HTML + Javascript',
-        img: '',
-        year: '2024'
-    },
-    {
-        id: 'neobloom',
-        name: 'Neo bloom',
-        stacks: 'Next.js',
-        img: '/images/previews/neobloom.png',
-        year: '2023'
-    },
-    {
-        id: 'acrousthetime',
-        name: 'Acrous the time',
-        stacks: 'Next.js',
-        img: '/images/previews/acrousthetime.png',
-        year: '2023'
-    },
-    {
-        id: 'flaguesser',
-        name: 'Flaguesser',
-        stacks: 'Angular',
-        img: '/images/previews/flaguesser.png',
-        year: '2022'
-    },
-    {
-        id: 'fichepaie',
-        name: 'Refonte Fiche-paie.net',
-        stacks: 'Angular + Symfony',
-        img: '/images/previews/fichepaie.png',
-        year: '2022-2023'
-    },
-    {
-        id: 'proxinnov',
-        name: 'Proxinnov',
-        stacks: 'HTML + Javascript + NodeJs',
-        img: '/images/previews/proxinnov.png',
-        year: '2022'
-    },
-];
+import { projects } from '@/assets/projects';
 
 const xPos = ref(0)
 const yPos = ref(0)
@@ -67,14 +16,18 @@ const updatePosition = (event: MouseEvent) => {
 const resetHoveredProject = () => {
     hoveredProject.value = null;
 }
+
+const getStacksToString = (stacks: string[]) => {
+    return stacks.join(' + ');
+}
 </script>
 
 <template>
     <ul @mousemove="updatePosition" @mouseleave="resetHoveredProject">
         <li v-for="project in projects" :key="project.id" :project-id="project.id">
-            <nuxt-link :to="'/' + project.id">
+            <nuxt-link :to="'/projet/' + project.id">
                 <span class="name">{{ project.name }}</span>
-                <span class="stack">{{ project.stacks }}</span>
+                <span class="stack">{{ getStacksToString(project.stacks) }}</span>
                 <span class="year">{{ project.year }}</span>
                 <span class="icon">+</span>
             </nuxt-link>

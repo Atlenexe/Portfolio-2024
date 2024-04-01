@@ -35,7 +35,6 @@ useHead({
   font-size: 18px;
   margin: 0;
   padding: 0;
-  color: var(--white);
 }
 
 html,
@@ -77,7 +76,6 @@ h2 {
 
 h3 {
   font-size: 50px;
-  letter-spacing: 4px;
-  margin-right: -4px;
+  letter-spacing: normal;
 }
 </style>

@@ -5,6 +5,10 @@
 </template>
 
 <style lang="scss" scoped>
+*{
+    color: var(--white);
+}
+
 footer {
     display: flex;
     justify-content: center;
