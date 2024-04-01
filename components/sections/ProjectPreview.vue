@@ -1,5 +1,5 @@
 <template>
-    <img v-if="project && yPos && xPos" :src="project.img" class="preview"
+    <img v-if="project && yPos && xPos" :src="'/Portfolio-2024' + project.img" class="preview"
         :style="{ transform: `translate(${xPos}px, ${yPos}px)` }">
 </template>
 
