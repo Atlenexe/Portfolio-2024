@@ -1,15 +1,15 @@
 <template>
     <nav :class="{ 'scrolled': scrolled }">
-        <nuxt-link :to="{ path: '/', hash: '#top'}" class="logo">Hugo Mandou</nuxt-link>
+        <span @click="scrollToTop" class="logo">Hugo Mandou</span>
         <ul>
             <li>
-                <nuxt-link :to="{ path: '/', hash: '#bio'}">Bio</nuxt-link>
+                <nuxt-link :to="{ path: '/', hash: '#bio' }">Bio</nuxt-link>
             </li>
             <li>
-                <nuxt-link :to="{ path: '/', hash: '#projets'}">Projets</nuxt-link>
+                <nuxt-link :to="{ path: '/', hash: '#projets' }">Projets</nuxt-link>
             </li>
             <li>
-                <nuxt-link :to="{ path: '/', hash: '#contact'}">Contact</nuxt-link>
+                <nuxt-link :to="{ path: '/', hash: '#contact' }">Contact</nuxt-link>
             </li>
         </ul>
     </nav>
@@ -32,6 +32,11 @@ export default {
     methods: {
         handleScroll() {
             this.scrolled = window.scrollY > window.innerHeight;
+        },
+        scrollToTop() {
+            window.scrollTo({
+                top: 0,
+            });
         }
     }
 };
@@ -49,10 +54,10 @@ nav {
     padding: 50px 70px;
 
     .logo {
-        text-decoration: none;
         font-size: 28px;
         opacity: 0;
         transition: opacity .2s linear;
+        cursor: pointer;
     }
 
     ul {
