@@ -70,21 +70,28 @@ div {
 
         .header-top {
             display: grid;
+            align-items: center;
             grid-template-columns: repeat(7, 1fr);
             grid-template-rows: 1fr;
             grid-column-gap: 0px;
             grid-row-gap: 0px;
             padding: 40px;
 
-            a {
-                font-weight: 600;
-            }
-
             .back {
                 grid-area: 1 / 1 / 2 / 2;
+                font-weight: 500;
                 display: flex;
                 align-items: center;
                 gap: 5px;
+                padding: 8px 16px;
+                width: fit-content;
+                border: 2px solid var(--white);
+                border-radius: 100%;
+                transition: border-color .15s ease-in-out;
+
+                &:hover {
+                    border-color: var(--blue);
+                }
 
                 svg {
                     fill: var(--blue);
