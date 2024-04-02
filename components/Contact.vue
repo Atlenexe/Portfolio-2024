@@ -8,10 +8,19 @@ import { TitlePosition } from '@/enums/TitlePosition';
             Contact
         </SectionTitle>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut felis ac nulla volutpat egestas a sed
-            dolor. Mauris porta et dui in pellentesque. Duis scelerisque elit vitae turpis interdum euismod.</p>
-        <p>Nulla facilisi. Aliquam pharetra, ex eget lacinia bibendum, erat nunc pharetra ligula, iaculis pretium
-            turpis risus in lectus.</p>
+        <div class="content">
+            <p>
+                Que ce soit pour discuter de collaborations professionnelles, échanger des idées passionnantes ou
+                simplement prendre contact, je suis toujours ouvert aux nouvelles opportunités !
+            </p>
+
+            <p>
+                N'hésitez pas à m'envoyer un email pour une réponse rapide ou à me suivre sur LinkedIn et GitHub pour
+                être au courant de mes derniers projets et contributions. Je suis impatient d'échanger avec vous et de
+                découvrir comment nous pouvons travailler ensemble !
+            </p>
+            <a href="mailto:hugo.mandou@gmail.com">hugo.mandou[at]gmail.com</a>
+        </div>
 
         <ul>
             <li>
@@ -34,6 +43,18 @@ import { TitlePosition } from '@/enums/TitlePosition';
 </template>
 
 <style lang="scss" scoped>
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20%;
+
+    a {
+        width: fit-content;
+        font-weight: bold;
+    }
+}
+
 ul {
     display: flex;
     justify-content: center;

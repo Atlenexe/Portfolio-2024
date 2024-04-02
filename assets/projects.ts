@@ -9,8 +9,11 @@ export const projects: Project[] = [
     year: "2024",
     websiteUrl: "https://hugomandou.fr",
     githubUrl: "https://github.com/Atlenexe/Portfolio-2024",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget gravida turpis. Ut fringilla vehicula elit non finibus. Quisque consequat eu elit vel vestibulum. Quisque ante ligula, vehicula ut nibh ut, venenatis dignissim mauris. Fusce neque eros, dapibus non lacus eu, vehicula congue diam. Donec dapibus eleifend nisi id elementum. Curabitur sit amet sollicitudin orci.",
+    content: `J'ai réalisé ce portfolio, du design jusqu'au développement. Tout a commencé par une phase de conception sur Figma, où j'ai donné vie à mes idées en créant des maquettes et en peaufinant chaque détail visuel.
+
+    Une fois le design solidifié, je me suis lancé dans la phase de développement en utilisant le framework Nuxt. Bien que j'aie eu peu d'expérience avec ce framework auparavant, cette opportunité m'a permis d'en apprendre beaucoup plus sur cette technologie.
+    
+    Pour le déploiement de mon portfolio, j'ai décidé d'utiliser Github Pages. Cela m'a permis d'héberger facilement et rapidement mon site web gratuitement. Sachant qu'il s'agit d'une petite application web, cela ne nécessitait pas une infrastructure lourde. Bien que ce fût ma première expérience avec cet outil, j'ai rencontré quelques problèmes initiaux, notamment au niveau du chargement des ressources telles que les images. Après quelques tours sur des documentations de Github Pages et de Nuxt, j'ai rapidement résolu tous mes problèmes !`,
   },
   {
     id: "supermaxiplanefight",
@@ -20,8 +23,13 @@ export const projects: Project[] = [
     year: "2024",
     websiteUrl: null,
     githubUrl: "https://github.com/Atlenexe/supermaxiplanefight",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget gravida turpis. Ut fringilla vehicula elit non finibus. Quisque consequat eu elit vel vestibulum. Quisque ante ligula, vehicula ut nibh ut, venenatis dignissim mauris. Fusce neque eros, dapibus non lacus eu, vehicula congue diam. Donec dapibus eleifend nisi id elementum. Curabitur sit amet sollicitudin orci.",
+    content: `Dans le cadre du mastère en développement web à l'ECV Nantes, j'ai participé à un projet solo consistant en la création d'un jeu vidéo réalisé entièrement en JavaScript pur.
+
+    Ayant déjà créé un jeu simple de type arcade sur le moteur de jeu GameMaker Studio 2, j'ai décidé de le reproduire sur un navigateur web, sans utiliser aucun moteur, en utilisant mes connaissances en JavaScript. Le défi principal résidait dans l'utilisation pour la première fois de l'élément HTML Canvas, permettant de réaliser des rendus dynamiques.
+    
+    Ce jeu, nommé "Super Maxi Plane Fight", est un jeu d'arcade inspiré des jeux que l'on trouvait sur ces machines dans les années 80, d'où cet aspect très cliché. Le but du jeu est très simple : nous contrôlons un avion et devons tirer sur d'autres avions ! (Il n'y a pas plus compliqué). Il y a un système de vie et de score pour créer de la compétition avec soi-même et, bien sûr, avec d'autres joueurs. Pour rendre le jeu plus dynamique et nerveux, j'ai pensé à ajouter d'autres types d'avions, chacun ayant ses spécificités.
+    
+    Ce projet n'est pas encore terminé, mais il repose sur de bonnes bases. Malheureusement, j'ai dû quitter cette formation à l'ECV Nantes en février, n'ayant pas trouvé d'alternance. Cependant, je compte tout de même continuer ce projet prochainement. Il me reste beaucoup à faire afin d'obtenir un jeu complet et agréable à jouer !`,
   },
   {
     id: "neobloom",
@@ -82,8 +90,17 @@ J'ai choisi d'utiliser une API fournissant des drapeaux de pays du monde, flagcd
     year: "2022-2023",
     websiteUrl: "https://www.fiche-paie.net/",
     githubUrl: null,
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget gravida turpis. Ut fringilla vehicula elit non finibus. Quisque consequat eu elit vel vestibulum. Quisque ante ligula, vehicula ut nibh ut, venenatis dignissim mauris. Fusce neque eros, dapibus non lacus eu, vehicula congue diam. Donec dapibus eleifend nisi id elementum. Curabitur sit amet sollicitudin orci.",
+    content: `Pour répondre aux difficultés des entrepreneurs à traiter la paie facilement pour leurs salariés, Dotnet développe un logiciel simple, conforme et à jour de la réglementation, appelé Fiche Paie. Elle compte près de 100 000 utilisateurs dans toute la France métropolitaine et dans les DOM-TOM, que ce soit des TPE, des PME, des commerçants ou des artisans.
+
+      Le logiciel propose un grand nombre de fonctionnalités pour simplifier le processus de paie, telles que la création rapide de fiches de paie, la DSN, les régularisations, les fins de contrat, la gestion du Prélèvement à la Source, un journal de paie complet, et bien d’autres fonctionnalités, avec une veille sociale et juridique pour rester en conformité avec les réglementations en vigueur.
+      
+      Dans le cadre de ma formation en Licence professionnelle MIAR à l'IUT de Nantes, j'ai effectué une alternance d'une durée d'un an dans l'entreprise Dotnet, dans laquelle j'ai été chargé de la mission de refonte complète du logiciel Fiche Paie, mission partagée avec le reste de l’équipe.
+      
+      Avant cette refonte, l'application tournait sous PHP, et avait quelques problèmes d’évolution, de stabilité, mais aussi de performance. Cette refonte consistait à refaire à neuf l'application dans sa totalité, en utilisant de nouvelles technologies, comme le framework Angular pour le front, mais aussi Symfony pour le back.
+      
+      N'ayant à mon arrivée aucune connaissance autour d'Angular et de Symfony, j'ai dû apprendre à utiliser ces outils en suivant des formations sur internet, en lisant les documentations et surtout en pratiquant. Au bout de quelques semaines, je me sentais très à l'aise avec ces technologies !
+      
+      Pour résumer mes tâches pendant cette alternance, j'ai reproduit des pages déjà existantes sur l'ancienne version de l'application, en reprenant exactement le même design, ou à certaines occasions, en les redesignant.`,
   },
   {
     id: "proxinnov",

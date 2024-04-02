@@ -4,6 +4,10 @@ import { projects } from '@/assets/projects';
 
 const router = useRoute();
 const project = projects.find((project: Project) => project.id === router.params.project);
+
+useSeoMeta({
+    title: project ? `Hugo Mandou - ${project.name}` : 'Hugo Mandou',
+});
 </script>
 
 <template>
