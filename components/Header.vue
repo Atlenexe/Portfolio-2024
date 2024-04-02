@@ -29,7 +29,7 @@ header {
         left: 0;
         width: 100%;
         height: 100vh;
-        background-image: url('/Portfolio-2024/images/noise.png');
+        background-image: url('/images/noise.png');
         background-size: cover;
         mix-blend-mode: overlay;
     }

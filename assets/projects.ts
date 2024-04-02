@@ -57,7 +57,7 @@ Le développement du site a été plutôt compliqué, à cause du temps très re
     img: "/images/previews/acrousthetime.png",
     year: "2023",
     websiteUrl: null,
-    githubUrl: null,
+    githubUrl: "https://github.com/Gugustinette/acrousthetime",
     content: `
     Lors de ma formation en licence professionnelle MIAR en juin 2023, j'ai effectué un projet en équipe de 6 durant 2 semaines. Le but du projet consistait à refaire entièrement l'emploi du temps de l'université de Nantes (back, front et appli mobile Android), avec comme seules ressources données par les enseignants, les fichiers CSV de toutes les données (étudiants, créneaux, salles, etc...). 
 

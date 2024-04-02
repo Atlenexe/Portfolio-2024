@@ -24,7 +24,7 @@ useSeoMeta({
                     <h1>{{ project.name }}<span class="year">({{ project.year }})</span></h1>
                 </div>
             </div>
-            <img v-if="project.img" :src="'/Portfolio-2024' + project.img" :alt="'Preview du site ' + project.name"
+            <img v-if="project.img" :src="project.img" :alt="'Preview du site ' + project.name"
                 class="banner">
         </header>
         <main>
