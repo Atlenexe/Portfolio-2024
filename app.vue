@@ -1,6 +1,9 @@
 <script setup lang="ts">
 useHead({
   title: 'Hugo Mandou',
+  htmlAttrs: {
+    lang: 'fr',
+  },
   meta: [
     { name: 'description', content: 'Développeur web fullstack à Nantes' },
     { name: 'lang', content: 'fr' },
@@ -9,7 +12,7 @@ useHead({
     { property: 'og:description', content: 'Développeur web fullstack à Nantes' },
     { property: 'og:type', content: 'website' },
   ],
-})
+});
 </script>
 
 <template>
