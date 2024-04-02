@@ -2,6 +2,6 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
-    baseURL: "/Portfolio-2024",
+    baseURL: "/Portfolio-2024/",
   },
 });
