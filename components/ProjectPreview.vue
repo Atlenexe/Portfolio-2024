@@ -21,5 +21,8 @@ const props = defineProps({
     top: -200px;
     transition: all .1s ease-out;
     pointer-events: none;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    z-index: 1;
 }
 </style>

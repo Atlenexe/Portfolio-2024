@@ -42,7 +42,7 @@ ul {
 
     img {
         height: 50px;
-        transition: all .3s;
+        transition: transform .3s;
 
         &:hover {
             transform: scale(1.1);

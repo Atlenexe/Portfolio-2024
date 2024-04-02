@@ -4,6 +4,8 @@ import { projects } from '@/assets/projects';
 
 const xPos = ref(0)
 const yPos = ref(0)
+const backgroundYPos = ref(0);
+const backgroundHeight = ref(0);
 const hoveredProject = ref<Project | null>(null);
 
 //Update the cursor position & get the hovered project
@@ -11,6 +13,10 @@ const updatePosition = (event: MouseEvent) => {
     [xPos.value, yPos.value] = [event.clientX, event.clientY];
     const hoveredElement = event.target as HTMLElement;
     hoveredProject.value = projects.find(project => project.id === (hoveredElement.closest('li')?.getAttribute('project-id') ?? null)) || null;
+
+    const rect = hoveredElement.getBoundingClientRect();
+    backgroundYPos.value = rect.top;
+    backgroundHeight.value = rect.height;
 };
 
 const resetHoveredProject = () => {
@@ -34,13 +40,29 @@ const getStacksToString = (stacks: string[]) => {
         </li>
     </ul>
 
+    <div class="project-background" v-if="hoveredProject"
+        :style="{ transform: `translateY(${backgroundYPos - 2}px)`, height: (backgroundHeight + 4) + 'px' }"></div>
+
     <ProjectPreview :xPos="xPos" :yPos="yPos" :project="hoveredProject" />
 </template>
 
 <style lang="scss" scoped>
+.project-background {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 50px;
+    background-color: var(--white);
+    z-index: 0;
+    pointer-events: none;
+    transition: transform .15s ease-out;
+}
+
 li {
     border-top: 2px solid var(--white);
     position: relative;
+    z-index: 1;
 
     a {
         display: grid;
@@ -87,25 +109,6 @@ li {
         span {
             color: var(--black);
         }
-    }
-
-    &::before {
-        content: '';
-        width: 100vw;
-        height: 100%;
-        position: absolute;
-        left: calc(-1 * var(--main-h-padding));
-        top: -2px;
-        background-color: var(--white);
-        z-index: 0;
-        border-top: 2px solid var(--white);
-        border-bottom: 2px solid var(--white);
-        opacity: 0;
-        transition: opacity .15s linear;
-    }
-
-    &:hover::before {
-        opacity: 1;
     }
 }
 </style>
