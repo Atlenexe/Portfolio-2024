@@ -136,4 +136,20 @@ li {
         }
     }
 }
+
+@media only screen and (max-width: 480px) {
+    li {
+        a {
+            &:hover {
+                span {
+                    color: var(--white);
+                }
+            }
+        }
+    }
+
+    .project-background {
+        display: none;
+    }
+}
 </style>

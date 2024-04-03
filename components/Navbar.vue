@@ -58,6 +58,7 @@ nav {
         opacity: 0;
         transition: opacity .2s linear;
         cursor: pointer;
+        pointer-events: none;
     }
 
     ul {
@@ -87,6 +88,7 @@ nav {
     &.scrolled {
         .logo {
             opacity: 1;
+            pointer-events: all;
         }
     }
 }
