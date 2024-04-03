@@ -11,7 +11,7 @@ useSeoMeta({
 </script>
 
 <template>
-    <div v-if="project">
+    <div v-if="project" class="project">
         <header>
             <div class="header-top">
                 <nuxt-link to="/#projets" class="back">
@@ -54,13 +54,13 @@ useSeoMeta({
         </main>
     </div>
 
-    <div v-else>
+    <div v-else class="project">
         <h1>Projet non trouvé</h1>
     </div>
 </template>
 
 <style lang="scss" scoped>
-div {
+.project {
     background-color: var(--white);
 
     header {
@@ -190,6 +190,72 @@ div {
                         fill: var(--white);
                     }
                 }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .project {
+        main {
+            gap: 40px;
+
+            .infos {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+
+                .stacks,
+                .links {
+                    flex-wrap: wrap;
+                    gap: 10px;
+                }
+
+                .link {
+                    padding: 5px 10px;
+                }
+            }
+        }
+
+        header {
+            .header-top {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 20px;
+                gap: 20px;
+
+                .back {
+                    gap: 5px;
+                    padding: 8px 16px;
+                }
+
+                .title {
+                    width: 100%;
+                    text-align: center;
+
+                    h1 {
+                        font-size: 60px;
+
+                        span {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+
+            .banner {
+                height: 400px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .project {
+        header {
+            .banner {
+                height: 250px;
             }
         }
     }
