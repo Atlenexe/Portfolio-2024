@@ -11,15 +11,15 @@ import { TitlePosition } from '@/enums/TitlePosition';
         <div class="content">
             <p>
                 Que ce soit pour discuter de collaborations professionnelles, échanger des idées passionnantes ou
-                simplement prendre contact, je suis toujours ouvert aux nouvelles opportunités !
+                simplement prendre contact, je suis <strong>toujours ouvert aux nouvelles opportunités</strong> !
             </p>
 
             <p>
-                N'hésitez pas à m'envoyer un email pour une réponse rapide ou à me suivre sur LinkedIn et GitHub pour
+                N'hésitez pas à m'envoyer un <strong>email</strong> pour une réponse rapide ou à me suivre sur <strong>LinkedIn et Github</strong> pour
                 être au courant de mes derniers projets et contributions. Je suis impatient d'échanger avec vous et de
                 découvrir comment nous pouvons travailler ensemble !
             </p>
-            <a href="mailto:hugo.mandou@gmail.com">hugo.mandou[at]gmail.com</a>
+            <a href="mailto:hugo.mandou@gmail.com"><strong>hugo.mandou[at]gmail.com</strong></a>
         </div>
 
         <ul>
@@ -51,7 +51,10 @@ import { TitlePosition } from '@/enums/TitlePosition';
 
     a {
         width: fit-content;
-        font-weight: bold;
+    }
+
+    strong {
+        font-weight: 800;
     }
 }
 

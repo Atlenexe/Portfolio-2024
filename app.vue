@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useHead({
-  title: 'Hugo Mandou',
+  title: 'Hugo Mandou - Développeur web',
   htmlAttrs: {
     lang: 'fr',
   },
@@ -100,6 +100,10 @@ h3 {
 
   h2 {
     font-size: 20px;
+  }
+
+  h3 {
+    font-size: 40px;
   }
 }
 

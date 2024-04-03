@@ -3,7 +3,7 @@
         <span @click="scrollToTop" class="logo">Hugo Mandou</span>
         <ul>
             <li>
-                <nuxt-link :to="{ path: '/', hash: '#bio' }">Bio</nuxt-link>
+                <nuxt-link :to="{ path: '/', hash: '#apropos' }">À propos</nuxt-link>
             </li>
             <li>
                 <nuxt-link :to="{ path: '/', hash: '#projets' }">Projets</nuxt-link>

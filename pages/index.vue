@@ -2,7 +2,7 @@
     <Header />
     <Navbar />
     <main>
-        <Bio />
+        <About />
         <Projects />
         <Contact />
     </main>
