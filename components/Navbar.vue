@@ -90,4 +90,29 @@ nav {
         }
     }
 }
+
+@media only screen and (max-width: 768px) {
+    nav {
+        padding: 50px 90px;
+        bottom: 0;
+        top: auto;
+
+        .logo {
+            display: none;
+        }
+
+        ul {
+            width: 100%;
+            justify-content: space-around;
+            gap: 0;
+            padding: 10px 25px;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    nav {
+        padding: 50px 20px;
+    }
+}
 </style>

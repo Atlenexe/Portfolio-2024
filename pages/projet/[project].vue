@@ -24,8 +24,7 @@ useSeoMeta({
                     <h1>{{ project.name }}<span class="year">({{ project.year }})</span></h1>
                 </div>
             </div>
-            <img v-if="project.img" :src="project.img" :alt="'Preview du site ' + project.name"
-                class="banner">
+            <img v-if="project.img" :src="project.img" :alt="'Preview du site ' + project.name" class="banner">
         </header>
         <main>
             <section class="infos">
@@ -130,7 +129,7 @@ div {
     main {
         display: flex;
         flex-direction: column;
-        padding: var(--main-h-padding) 60px;
+        padding: 60px var(--main-h-padding);
         gap: 80px;
 
         * {

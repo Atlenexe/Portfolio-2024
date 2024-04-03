@@ -67,13 +67,11 @@ li {
     a {
         display: grid;
         grid-template-columns: repeat(11, 1fr);
-        grid-template-rows: 1fr;
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
+        padding: 30px 0;
 
         span {
-            padding: 30px 0;
             position: relative;
+            pointer-events: none;
         }
 
         .name {
@@ -108,6 +106,33 @@ li {
     &:hover {
         span {
             color: var(--black);
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    li {
+        a {
+            grid-template-rows: repeat(2, 1fr);
+            grid-row-gap: 5px;
+
+            .name {
+                grid-area: 1 / 1 / 2 / 11;
+            }
+
+            .stack {
+                grid-area: 2 / 4 / 3 / 11;
+            }
+
+            .year {
+                grid-area: 2 / 1 / 3 / 4;
+                justify-content: flex-start;
+            }
+
+            .icon {
+                grid-area: 1 / 11 / 3 / 12;
+                align-items: center;
+            }
         }
     }
 }

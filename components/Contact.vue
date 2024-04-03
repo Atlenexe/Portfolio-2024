@@ -71,4 +71,16 @@ ul {
         }
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .content {
+        padding: 0 10%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .content {
+        padding: 0;
+    }
+}
 </style>

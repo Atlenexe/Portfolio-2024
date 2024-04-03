@@ -28,8 +28,8 @@ useHead({
   --black: #242121;
   --blue: #2F36DB;
   --light-blue: #d6d7ff;
-
   --main-h-padding: 60px;
+  --main-v-gap: 280px;
 }
 
 * {
@@ -80,5 +80,40 @@ h2 {
 h3 {
   font-size: 50px;
   letter-spacing: normal;
+}
+
+@media only screen and (max-width: 768px) {
+  :root {
+    --main-h-padding: 30px;
+    --main-v-gap: 150px;
+  }
+
+  * {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 90px;
+    letter-spacing: 15px;
+    margin-right: -15px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  h1 {
+    font-size: 70px;
+    letter-spacing: 10px;
+    margin-right: -10px;
+  }
+
+  h2 {
+    font-size: 16px;
+    color: var(--blue);
+  }
 }
 </style>

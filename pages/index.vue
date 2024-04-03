@@ -12,8 +12,8 @@
 main {
     display: flex;
     flex-direction: column;
-    gap: 280px;
-    padding: var(--main-h-padding) 60px;
+    gap: var(--main-v-gap);
+    padding: 60px var(--main-h-padding);
 }
 </style>
 
