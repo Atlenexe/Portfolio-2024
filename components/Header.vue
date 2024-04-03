@@ -13,25 +13,15 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: radial-gradient(70% calc(100vh * 0.9) at center, #dbdcff 0%, #3439b7 55%, #00011e 100%);
+    background-image: url('/images/background.png');
+    background-size: cover;
+    background-position: center;
     position: relative;
 
     h1,
     h2 {
         display: inline-block;
         z-index: 0;
-    }
-
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        background-image: url('/images/noise.png');
-        background-size: cover;
-        mix-blend-mode: overlay;
     }
 }
 </style>
