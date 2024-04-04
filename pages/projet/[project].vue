@@ -2,9 +2,14 @@
 import type { Project } from '@/types/Project';
 import { projects } from '@/assets/projects';
 
-const router = useRoute();
-const project = projects.find((project: Project) => project.id === router.params.project);
+const route = useRoute();
+const project = projects.find((project: Project) => project.id === route.params.project);
 
+if (!project) {
+    throw createError({
+        statusCode: 404,
+    })
+}
 useSeoMeta({
     title: project ? `Hugo Mandou - ${project.name}` : 'Hugo Mandou',
 });
@@ -52,10 +57,6 @@ useSeoMeta({
             </section>
             <p>{{ project.content }}</p>
         </main>
-    </div>
-
-    <div v-else class="project">
-        <h1>Projet non trouvé</h1>
     </div>
 </template>
 
