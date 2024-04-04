@@ -8,7 +8,9 @@ const project = projects.find((project: Project) => project.id === route.params.
 if (!project) {
     throw createError({
         statusCode: 404,
-    })
+        statusMessage: 'Cette page n\'existe pas !',
+        fatal: true,
+    });
 }
 useSeoMeta({
     title: project ? `Hugo Mandou - ${project.name}` : 'Hugo Mandou',
