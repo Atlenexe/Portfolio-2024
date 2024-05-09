@@ -12,6 +12,7 @@ useHead({
     { property: 'og:description', content: 'Développeur web fullstack à Nantes' },
     { property: 'og:type', content: 'website' },
   ],
+  link: [{ rel: 'icon', type: 'image/x-icon', href: 'https://hugomandou.fr/favicon.ico' }],
 });
 </script>
 
