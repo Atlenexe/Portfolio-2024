@@ -2,6 +2,22 @@ import type { Project } from "@/types/Project";
 
 export const projects: Project[] = [
   {
+    id: "gaellemandou",
+    name: "Gaëlle Mandou",
+    stacks: ["Nuxt", "Figma", "DatoCMS"],
+    img: "/images/previews/gaellemandou.png",
+    year: "2024",
+    websiteUrl: "https://gaellemandou.fr",
+    githubUrl: null,
+    content: `Gaëlle Mandou est une photographe basée à Bordeaux, mais également en déplacement dans d'autres pays du monde, spécialisée dans la streetphoto, l'événementiel (concert, festival, spectacle...), les portraits ainsi que le lifestyle.
+
+    Elle m'a demandé de lui faire un portfolio web pour qu'elle puisse exposer ses photos librement. Pour le design, elle a voulu quelque chose de très simple mais efficace.
+    
+    Après s'être mis d'accord sur le design final, j'ai créé une application Nuxt, à laquelle j'ai connecté un CMS headless disponible en ligne, DatoCMS. Cela permet à Gaëlle d'ajouter et modifier le contenu de son site très simplement et rapidement, depuis une interface claire.
+    
+    J'ai également utilisé la library Vue Masonry Wall de Yeger, qui permet d'afficher les photos sous forme de grille dans le même style que Pinterest, tout en gérant le côté responsive.`,
+  },
+  {
     id: "portfolio",
     name: "Portfolio",
     stacks: ["Nuxt", "Figma"],
